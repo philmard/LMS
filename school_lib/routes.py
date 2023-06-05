@@ -1072,7 +1072,7 @@ def list_of_borrowed_books():
             FROM `transaction` t
             JOIN `book` b ON t.ISBN = b.ISBN
             WHERE t.transaction_type = 1
-            AND t.transaction_status = 1
+            -- AND t.transaction_status = 1
             AND t.user_id = %s
             GROUP BY t.ISBN
             """
