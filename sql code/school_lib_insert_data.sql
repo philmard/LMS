@@ -2978,170 +2978,173 @@ VALUES(4, 1597754095, 124);
 -- 12)TABLE:user
 
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('pschinner@example.com', 0, 'Kunze', 'Aniyah', 'vthiel', '252d995473db2c27cb47b076f8bba7f79d68e453', 1, 2, 17);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('pschinner@example.com', 0, 'Kunze', 'Aniyah', 'vthiel', '252d995473db2c27cb47b076f8bba7f79d68e453', 1, 2, 17, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('estella36@example.com', 1, 'Bartoletti', 'Felix', 'jakayla.treutel', 'eec481ea923029dc07aae8bab913f6a4c0b0438f', 2, 2, 32);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('estella36@example.com', 1, 'Bartoletti', 'Felix', 'jakayla.treutel', 'eec481ea923029dc07aae8bab913f6a4c0b0438f', 2, 2, 32, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('jailyn.schowalter@example.com', 0, 'Mante', 'Nora', 'jakubowski.irving', '15244b3f4cc717d9f17d8ae6beb101a9f6696c62', 3, 2, 12);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('jailyn.schowalter@example.com', 0, 'Mante', 'Nora', 'jakubowski.irving', '15244b3f4cc717d9f17d8ae6beb101a9f6696c62', 3, 2, 12, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('stanton.kamille@example.net', 0, 'Marvin', 'Joannie', 'marlene86', 'f3d0a33f594ddf1a603a79b1ac010e9bbb189c68', 4, 4, 16);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('stanton.kamille@example.net', 0, 'Marvin', 'Joannie', 'marlene86', 'f3d0a33f594ddf1a603a79b1ac010e9bbb189c68', 4, 4, 16, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('gcorkery@example.org', 0, 'Pfannerstill', 'Oleta', 'wmueller', 'bd4f0159fc003d86f10eafd194e834cb0cc084aa', 5, 2, 14);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('gcorkery@example.org', 0, 'Pfannerstill', 'Oleta', 'wmueller', 'bd4f0159fc003d86f10eafd194e834cb0cc084aa', 5, 2, 14, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('auer.neha@example.com', 1, 'Hickle', 'Ettie', 'rodriguez.gillian', '0ad75747847366f6ec3a39d2724a7414c62b73c4', 6, 1, 49);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('auer.neha@example.com', 1, 'Hickle', 'Ettie', 'rodriguez.gillian', '0ad75747847366f6ec3a39d2724a7414c62b73c4', 6, 1, 49, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('herminia51@example.org', 0, 'Kozey', 'Nolan', 'panosbel', '2898858967c4ec044e26f403a329f3bed2de8816', 7, 3, 14);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('herminia51@example.org', 0, 'Kozey', 'Nolan', 'panosbel', '2898858967c4ec044e26f403a329f3bed2de8816', 7, 3, 14, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('giovanni.christiansen@example.com', 1, 'Friesen', 'Cordell', 'ospinka', '6b587d1ef1e30d9978b15b0d391904e36796e390', 8, 4, 58);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('giovanni.christiansen@example.com', 1, 'Friesen', 'Cordell', 'ospinka', '6b587d1ef1e30d9978b15b0d391904e36796e390', 8, 4, 58, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('po''kon@example.net', 1, 'West', 'Edmond', 'hnikolaus', 'b0cff38d5b4343091305754c74e533d8d09efdb9', 9, 3, 40);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('po''kon@example.net', 1, 'West', 'Edmond', 'hnikolaus', 'b0cff38d5b4343091305754c74e533d8d09efdb9', 9, 3, 40, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('nathanial.tromp@example.org', 1, 'Wolff', 'Lorine', 'cgraham2', 'e767a0bb20ba8d4871322999a67fb4f43e17de3e', 10, 3, 31);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('nathanial.tromp@example.org', 1, 'Wolff', 'Lorine', 'cgraham2', 'e767a0bb20ba8d4871322999a67fb4f43e17de3e', 10, 3, 31, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('mustafa.schiller@example.com', 0, 'Russel', 'Vicente', 'cgraham', '67883ffd2775b12bedf07b72ef6ddcf1036e6872', 11, 2, 15);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('mustafa.schiller@example.com', 0, 'Russel', 'Vicente', 'cgraham', '67883ffd2775b12bedf07b72ef6ddcf1036e6872', 11, 2, 15, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('jazmyne65@example.com', 1, 'O''Reilly', 'Moses', 'ambrose.wyman', 'a6abb75aef3f85e7b9f9eec4a33923968bd63cdd', 12, 3, 33);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('jazmyne65@example.com', 1, 'O''Reilly', 'Moses', 'ambrose.wyman', 'a6abb75aef3f85e7b9f9eec4a33923968bd63cdd', 12, 3, 33, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('cindy07@example.com', 1, 'Gutkowski', 'Andy', 'blake20', '9888381fbb56740e9db02b955e93120a276b4e23', 13, 1, 35);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('cindy07@example.com', 1, 'Gutkowski', 'Andy', 'blake20', '9888381fbb56740e9db02b955e93120a276b4e23', 13, 1, 35, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('browe@example.com', 0, 'Legros', 'Reta', 'jermey.crooks', '0502bf2d288e80aacc70ae1a4b1f026d13319421', 14, 2, 16);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('browe@example.com', 0, 'Legros', 'Reta', 'jermey.crooks', '0502bf2d288e80aacc70ae1a4b1f026d13319421', 14, 2, 16, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('dennis.schaden@example.com', 1, 'Donnelly', 'Sid', 'vince63', 'd59ddc3bdaf39470e1fc9256e0c0007fcd5e0e35', 15, 4, 55);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('dennis.schaden@example.com', 1, 'Donnelly', 'Sid', 'vince63', 'd59ddc3bdaf39470e1fc9256e0c0007fcd5e0e35', 15, 4, 55, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('muller.pink@example.com', 1, 'Turner', 'Hubert', 'dino56', 'f55afea007c6b0a89d967d2f2082fc87974e6078', 16, 3, 56);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('muller.pink@example.com', 1, 'Turner', 'Hubert', 'dino56', 'f55afea007c6b0a89d967d2f2082fc87974e6078', 16, 3, 56, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('timmy51@example.org', 1, 'Blick', 'Amara', 'margarett03', '42b53d2bc89227e10a6e584abcaa2db01272fdd2', 17, 1, 57);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('timmy51@example.org', 1, 'Blick', 'Amara', 'margarett03', '42b53d2bc89227e10a6e584abcaa2db01272fdd2', 17, 1, 57, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('jaylon.rolfson@example.com', 0, 'Padberg', 'Toney', 'ckreiger', '60f20cca8344d8d4eddd0a12f639ddd533bc1901', 18, 3, 12);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('jaylon.rolfson@example.com', 0, 'Padberg', 'Toney', 'ckreiger', '60f20cca8344d8d4eddd0a12f639ddd533bc1901', 18, 3, 12, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('thiel.alysha@example.org', 1, 'Connelly', 'Bradley', 'qvandervort', '03cbcf37002fb9f0cd24160b91ba7c6731e2d8a2', 19, 3, 30);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('thiel.alysha@example.org', 1, 'Connelly', 'Bradley', 'qvandervort', '03cbcf37002fb9f0cd24160b91ba7c6731e2d8a2', 19, 3, 30, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('kub.kelli@example.com', 0, 'Hoppe', 'Patricia', 'uabernathy', '7ccc55eb0946bf2a973560e3c32e854e0616027e', 20, 2, 17);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('kub.kelli@example.com', 0, 'Hoppe', 'Patricia', 'uabernathy', '7ccc55eb0946bf2a973560e3c32e854e0616027e', 20, 2, 17, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('jlubowitz@example.com', 0, 'Miller', 'Wilson', 'odach', 'f985d09d257171a06027394eb85f4e18a4dd13ca', 21, 2, 18);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('jlubowitz@example.com', 0, 'Miller', 'Wilson', 'odach', 'f985d09d257171a06027394eb85f4e18a4dd13ca', 21, 2, 18, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ethompson@example.com', 1, 'Flatley', 'Ephraim', 'carmen.adams', 'c88772d2e933be6d28e9a3fbf02608153d4aa953', 22, 3, 28);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ethompson@example.com', 1, 'Flatley', 'Ephraim', 'carmen.adams', 'c88772d2e933be6d28e9a3fbf02608153d4aa953', 22, 3, 28, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('druecker@example.net', 1, 'Wiza', 'Aileen', 'terry.katarina', '12beb1b839c9d7946dd1cf0ed4f15e93b5fce36b', 23, 2, 42);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('druecker@example.net', 1, 'Wiza', 'Aileen', 'terry.katarina', '12beb1b839c9d7946dd1cf0ed4f15e93b5fce36b', 23, 2, 42, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('schuster.darien@example.net', 1, 'Crona', 'Nona', 'ivory83', '8fd04727f04d7136861437c6bbe3e00e920df98a', 24, 4, 45);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('schuster.darien@example.net', 1, 'Crona', 'Nona', 'ivory83', '8fd04727f04d7136861437c6bbe3e00e920df98a', 24, 4, 45, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('albina34@example.org', 0, 'Schuster', 'Jamie', 'camren77', 'db81bd1e90f8e14c2c87cebc3d658c091c3de9fb', 25, 1, 19);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('albina34@example.org', 0, 'Schuster', 'Jamie', 'camren77', 'db81bd1e90f8e14c2c87cebc3d658c091c3de9fb', 25, 1, 19, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('smitham.wiley@example.org', 1, 'Reinger', 'Joyce', 'nitzsche.michele', '1dc0b69972e18dc9bc195cf83a5f9738d85b2144', 26, 1, 32);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('smitham.wiley@example.org', 1, 'Reinger', 'Joyce', 'nitzsche.michele', '1dc0b69972e18dc9bc195cf83a5f9738d85b2144', 26, 1, 32, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('alfonzo95@example.net', 0, 'Rowe', 'Enoch', 'rubye73', '5e04da1b7e66d34d766edc7927c86ea55ecc3765', 27, 4, 17);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('alfonzo95@example.net', 0, 'Rowe', 'Enoch', 'rubye73', '5e04da1b7e66d34d766edc7927c86ea55ecc3765', 27, 4, 17, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ziemann.tressa@example.com', 1, 'Mann', 'Michael', 'kody64', '74c50aeb78024625649602b21670c91216f32952', 28, 4, 30);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ziemann.tressa@example.com', 1, 'Mann', 'Michael', 'kody64', '74c50aeb78024625649602b21670c91216f32952', 28, 4, 30, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('dillon29@example.com', 1, 'DuBuque', 'Lloyd', 'enikolaus', '2c1175d1cc7da9e97ab779c8944ba2c14735bbda', 29, 3, 37);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('dillon29@example.com', 1, 'DuBuque', 'Lloyd', 'enikolaus', '2c1175d1cc7da9e97ab779c8944ba2c14735bbda', 29, 3, 37, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('andres64@example.net', 0, 'Kreiger', 'Bennett', 'fdoyle', 'bf58d2d30c5b1f5dda776ac46b9201a43304a402', 30, 2, 14);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('andres64@example.net', 0, 'Kreiger', 'Bennett', 'fdoyle', 'bf58d2d30c5b1f5dda776ac46b9201a43304a402', 30, 2, 14, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('toy.reilly@example.net', 1, 'Bins', 'Caesar', 'robbie21', '54d443f57058485355f3d00574d427baa31715c1', 31, 2, 39);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('toy.reilly@example.net', 1, 'Bins', 'Caesar', 'robbie21', '54d443f57058485355f3d00574d427baa31715c1', 31, 2, 39, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('rempel.ruben@example.com', 1, 'Ratke', 'Demarco', 'van10', 'a9b18def118ade396a12bf0b087b737e9137551b', 32, 1, 41);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('rempel.ruben@example.com', 1, 'Ratke', 'Demarco', 'van10', 'a9b18def118ade396a12bf0b087b737e9137551b', 32, 1, 41, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('nico.corkery@example.org', 0, 'Bosco', 'Emmalee', 'milan53', '46b19b8cf007c26a0fd659da8dccaf319e52070d', 33, 2, 18);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('nico.corkery@example.org', 0, 'Bosco', 'Emmalee', 'milan53', '46b19b8cf007c26a0fd659da8dccaf319e52070d', 33, 2, 18, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('oda07@example.org', 1, 'Wisoky', 'Annamae', 'victor88', 'ea48728869e9d25a540ef60a435762a49f6e2628', 34, 3, 46);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('oda07@example.org', 1, 'Wisoky', 'Annamae', 'victor88', 'ea48728869e9d25a540ef60a435762a49f6e2628', 34, 3, 46, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('chesley.bosco@example.org', 1, 'Keebler', 'Dean', 'karina.roob', 'fdac406416deae5d9619e935c30dc5f6b986c05f', 35, 1, 47);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('chesley.bosco@example.org', 1, 'Keebler', 'Dean', 'karina.roob', 'fdac406416deae5d9619e935c30dc5f6b986c05f', 35, 1, 47, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('qschmeler@example.net', 0, 'Waelchi', 'Bethany', 'carlos.reilly', '8a5ac3abdeb054183bb7b13c4a861d6fbd89eda9', 36, 3, 15);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('qschmeler@example.net', 0, 'Waelchi', 'Bethany', 'carlos.reilly', '8a5ac3abdeb054183bb7b13c4a861d6fbd89eda9', 36, 3, 15, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('prenner@example.net', 1, 'DuBuque', 'Julia', 'gusikowski.wilburn', 'be4b132917954d36402523de2897923cd29a11af', 37, 1, 60);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('prenner@example.net', 1, 'DuBuque', 'Julia', 'gusikowski.wilburn', 'be4b132917954d36402523de2897923cd29a11af', 37, 1, 60, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('gkoepp@example.net', 1, 'Morissette', 'Isom', 'beahan.benedict', '871e366bb076c151b2ae707d6e78d4788083420d', 38, 3, 62);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('gkoepp@example.net', 1, 'Morissette', 'Isom', 'beahan.benedict', '871e366bb076c151b2ae707d6e78d4788083420d', 38, 3, 62, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('kole34@example.com', 0, 'DuBuque', 'Amy', 'summer00', '9fe27176d87281b73dc450980ead5f7a8425eff6', 39, 4, 17);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('kole34@example.com', 0, 'DuBuque', 'Amy', 'summer00', '9fe27176d87281b73dc450980ead5f7a8425eff6', 39, 4, 17, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('lillie.weber@example.com', 1, 'Cremin', 'Reid', 'tatum49', '2a5d8e4bf8cb40215d4d0af39cd494582edc7338', 40, 4, 53);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('lillie.weber@example.com', 1, 'Cremin', 'Reid', 'tatum49', '2a5d8e4bf8cb40215d4d0af39cd494582edc7338', 40, 4, 53, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('lubowitz.geo@example.com', 1, 'Hammes', 'Kelley', 'queenie.herzog', '6c9fa817c4314fa0ae6fcc80989b55201ff6d3d4', 41, 1, 54);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('lubowitz.geo@example.com', 1, 'Hammes', 'Kelley', 'queenie.herzog', '6c9fa817c4314fa0ae6fcc80989b55201ff6d3d4', 41, 1, 54, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('rosendo.hilll@example.com', 0, 'Jenkins', 'Leanne', 'nellie.dietrich', '52e3904b956a4dcc01d8a2ebc502582c62d86cf8', 42, 1, 12);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('rosendo.hilll@example.com', 0, 'Jenkins', 'Leanne', 'nellie.dietrich', '52e3904b956a4dcc01d8a2ebc502582c62d86cf8', 42, 1, 12, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('loy61@example.com', 0, 'Homenick', 'Esteban', 'oberbrunner.serenity', '2f1fc1a75f715aff03292ae8ccba435df0769eb8', 43, 1, 16);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('loy61@example.com', 0, 'Homenick', 'Esteban', 'oberbrunner.serenity', '2f1fc1a75f715aff03292ae8ccba435df0769eb8', 43, 1, 16, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('noble.armstrong@example.net', 1, 'Boehm', 'Eve', 'herzog.lexi', '51000a5d8993c6326fcae096c74d609cba984811', 44, 4, 29);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('noble.armstrong@example.net', 1, 'Boehm', 'Eve', 'herzog.lexi', '51000a5d8993c6326fcae096c74d609cba984811', 44, 4, 29, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ureichel@example.com', 0, 'Champlin', 'Laurine', 'dibbert.kamren', '3fed582abd969737c34eeda2abfe2a3be6c5428b', 45, 1, 14);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ureichel@example.com', 0, 'Champlin', 'Laurine', 'dibbert.kamren', '3fed582abd969737c34eeda2abfe2a3be6c5428b', 45, 1, 14, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('cleveland30@example.org', 1, 'Nolan', 'Maymie', 'marguerite.greenfelder', 'f7c887f315baed6d3b8c28c017d02798b22eec42', 46, 1, 32);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('cleveland30@example.org', 1, 'Nolan', 'Maymie', 'marguerite.greenfelder', 'f7c887f315baed6d3b8c28c017d02798b22eec42', 46, 1, 32, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('dana95@example.net', 0, 'Greenfelder', 'Felipa', 'ewell74', '95211a08dac1c041ada6317367d17223d4416a12', 47, 2, 15);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('dana95@example.net', 0, 'Greenfelder', 'Felipa', 'ewell74', '95211a08dac1c041ada6317367d17223d4416a12', 47, 2, 15, 0);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('senger.lelia@example.net', 0, 'Shields', 'Jacinthe', 'mad', '69', 48, 3, 17);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('senger.lelia@example.net', 0, 'Shields', 'Jacinthe', 'mad', '69', 48, 3, 17, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('harvey.rhianna@example.org', 1, 'Huel', 'Dorothy', 'o''keefe.fabian', '2828b22ed69b1738cb5ec41831cf51ff89a64caa', 49, 2, 34);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('harvey.rhianna@example.org', 1, 'Huel', 'Dorothy', 'o''keefe.fabian', '2828b22ed69b1738cb5ec41831cf51ff89a64caa', 49, 2, 34, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('bcremin@example.org', 1, 'Corwin', 'Chaim', 'rdooley', 'fa725db7f3cc40147426913db365659683035eb4', 50, 3, 54);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('bcremin@example.org', 1, 'Corwin', 'Chaim', 'rdooley', 'fa725db7f3cc40147426913db365659683035eb4', 50, 3, 54, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('frida.greenfelder@example.net', 1, 'Hettinger', 'Merle', 'qrath', '5e24287f81e835e932659d4be6f23895964de8c4', 51, 4, 61);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('frida.greenfelder@example.net', 1, 'Hettinger', 'Merle', 'qrath', '5e24287f81e835e932659d4be6f23895964de8c4', 51, 4, 61, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ila.runolfsson@example.com', 2, 'Belsis', 'Panagiotis', 'belsinho', '12345', 52, 1, 21);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ila.runolfsson@example.com', 2, 'Belsis', 'Panagiotis', 'belsinho', '12345', 52, 1, 21, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ahmad.johns@example.net', 1, 'Botis', 'Asimakis', 'asimakis7', 'as123', 53, 2, 45);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ahmad.johns@example.net', 1, 'Botis', 'Asimakis', 'asimakis7', '54321', 53, 2, 45, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('uvonrueden@example.org', 3, 'Giannousiadis', 'Andronikos', 'angiann', '123', 54, 3, 38);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('uvonrueden@example.org', 2, 'Giannousiadis', 'Andronikos', 'angiann', '123', 54, 3, 38, 1);
 INSERT INTO school_lib.`user`
-(email, user_type, last_name, first_name, username, password, user_id, school_id, age)
-VALUES('ncorwin@example.org', 2, 'Will', 'Konstantinos', 'konwill23', '96d192d451a1551c67427cbc56bdd10d9ff7a726', 55, 4, 37);
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('ncorwin@example.org', 3, 'Iliadis', 'Ioannis', 'Lil Mint', 'trof321', 55, 4, 37, 1);
+INSERT INTO school_lib.`user`
+(email, user_type, last_name, first_name, username, password, user_id, school_id, age, user_status)
+VALUES('chrysa@gmail.com', 1, 'pepo', 'chrysa', 'chrysap', '123', 56, 1, 50, 1);
 
 -- 11)TABLE:transaction
 
