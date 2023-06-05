@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title and Author Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='author_style.css') }}">
+
+</head>
+<body>
+    <h1>Title and Author Results</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+    <button onclick="goToAddBookPage()">Add Book</button>  <!-- Add the "Add Book" button -->
+
+    <form action="{{ url_for('fetch_title_author') }}" method="GET">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ request.args.get('title', '') }}">
+        <br>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" value="{{ request.args.get('author', '') }}">
+        <br>
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="{{ request.args.get('category', '') }}">
+        <br>
+        <label for="copies_criteria">Minimum Number of Copies:</label>
+        <input type="number" id="copies_criteria" name="copies_criteria" min="1" value="{{ request.args.get('copies_criteria', '') }}">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+    
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Copies</th>
+            <th>Details</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>
+                <form action="{{ url_for('book_details') }}" method="GET">
+                    <input type="hidden" name="ISBN" value="{{ result[4] }}">
+                    <button type="submit">View Details</button>
+                </form>
+                
+            </td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+    <script>
+        function goToHomePage() {
+          window.location.href = "http://127.0.0.1:5000/home";
+        }
+        function goToAddBookPage() {
+            window.location.href = "http://127.0.0.1:5000/add_book";  // Redirect to the add book page
+        }
+      </script>
+</body>
+</html>

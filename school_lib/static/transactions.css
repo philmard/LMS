@@ -1,0 +1,100 @@
+/* transactions.css */
+
+/* Reset default margin and padding */
+body, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Center align the content */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the form */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f9f9f9;
+}
+
+/* Style the "No transactions found" message */
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #888;
+}
+
+@keyframes flamesAnimation {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1.5); }
+}
+
+.flames {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-image: url('giphy.webp');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999;
+    animation: flamesAnimation 2s ease-in-out;
+}
+
+
+button {
+    display: block;
+    margin: 20px auto; /* Adjust the margin to center the button horizontally and add some vertical spacing */
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #45a049;
+}

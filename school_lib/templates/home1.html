@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <meta name="description" content="This is the home page for the Library Management System. Explore various features and information related to books and authors.">
+    <meta name="keywords" content="Library Management System, books, authors, categories, loans, ratings">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .background-image {
+            background-image: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/da4d0-library-in-delhi.jpg?fit=1000%2C748&ssl=1');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            opacity: 1.0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .button-list li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .button:hover::before {
+            left: 0;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .button {
+            background-color: #555;
+        }
+
+        .dark-mode .button::before {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Primary Colors */
+        .button:nth-child(2n) {
+            background-color: #17a2b8;
+        }
+
+        .button:nth-child(3n) {
+            background-color: #dc3545;
+        }
+        
+        /* Custom Styles */
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .button-wrapper {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        function toggleDarkMode() {
+            var body = document.querySelector("body");
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/">
+        <input type="submit" value="Logout">
+    </form>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="content">
+            <h1>Welcome to the Library Management System</h1>
+            <ul class="button-list">
+                <li><a href="{{ url_for('fetch_all_books') }}" class="button"><span>All Books</span></a></li>
+                <li><a href="{{ url_for('list_of_borrowed_books') }}" class="button"><span>List of borrowed books</span></a></li>
+            </ul>
+            <div class="top-right">
+                <div class="button-wrapper">
+                    <li><a href="{{ url_for('change_password') }}" class="button"><span>Change your password</span></a></li>
+                    {% if user_type == 1 %}
+                    <li><a href="{{ url_for('profile') }}" class="button"><span>Modify your personal information </span></a></li>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</body>
+</html>
+
+

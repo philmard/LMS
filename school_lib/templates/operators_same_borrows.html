@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Operators with same loan number</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='young_teachers.css') }}">
+</head>
+<body>
+  <h1>Operators who have loaned the same number of books (Over 20)</h1>
+  <button onclick="goToHomePage()">Home Page</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Operator First Name</th>
+        <th>Operator Last Name</th>
+        <th>Loan Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for first_name,last_name,count in operators_same_borrows %}
+      <tr>
+        <td>{{ first_name }}</td>
+        <td>{{ last_name }}</td>
+        <td>{{ count }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    function goToHomePage() {
+      window.location.href = "http://127.0.0.1:5000/home";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approve operator sign-up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fetch_signups01.css') }}">
+</head>
+<body>
+    <h1>Approve operator sign-up</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>username</th>
+            <th>user_type</th>
+            <th>email</th>
+            <th>last_name</th>
+            <th>first_name</th>
+            <th>user_id</th>
+            <th>school_id</th>
+            <th>age</th>
+            <th>user_status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user_detail in user_details %}
+        <tr>
+            <td>{{ user_detail[0] }}</td>
+            <td>{{ user_detail[1] }}</td>
+            <td>{{ user_detail[2] }}</td>
+            <td>{{ user_detail[3] }}</td>
+            <td>{{ user_detail[4] }}</td>
+            <td>{{ user_detail[5] }}</td>
+            <td>{{ user_detail[6] }}</td>
+            <td>{{ user_detail[7] }}</td>
+            <td>{{ user_detail[8] }}</td>
+            <td>
+                <form action="{{ url_for('accept_signups2') }}" method="POST">
+                    <input type="hidden" name="user_id" value="{{ user_detail[5] }}">
+                    {% if user_detail[8] == 0 %}
+                    <input type="submit" value="Accept user" name="action" class="button">
+                    {% elif user_detail[8] == 1 %}
+                    <input type="submit" value="Cancel user" name="action" class="button">
+                    {% endif %}    
+                </form>
+                            
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+
+    <script>
+
+const Buttons = document.querySelectorAll('.button');
+        Buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (button.value === 'Accept user') {
+                    button.value = 'Cancel user';
+                } else {
+                    button.value = 'Accept user';
+                }
+            });
+        });
+
+        function goToHomePage() {
+          window.location.href = "http://127.0.0.1:5000/home";
+        }
+    </script>
+</body>
+</html>

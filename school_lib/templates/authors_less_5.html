@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All authors who have written at least 5 books less than the author with the most books</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='authors_less_5.css') }}">
+</head>
+<body>
+  <h1>All authors who have written at least 5 books less than the author with the most books</h1>
+  <button onclick="goToHomePage()">Home Page</button>
+  <table>
+    <thead>
+      <tr>
+        <th>author_id</th>
+        <th>Author Full Name</th>
+        <th>Number of Books</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for author_id,full_name,num_books in authors_less_5 %}
+      <tr>
+        <td>{{ author_id }}</td>
+        <td>{{ full_name }}</td>
+        <td>{{ num_books }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    function goToHomePage() {
+      window.location.href = "http://127.0.0.1:5000/home";
+    }
+  </script>
+</body>
+</html>
+

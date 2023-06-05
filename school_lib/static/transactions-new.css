@@ -1,0 +1,15 @@
+.flames {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-image: url('https://media.giphy.com/media/5nsiFjdgylfK3csZ5T/giphy.gif');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
+  

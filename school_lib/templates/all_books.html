@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>All Books</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all-books.css') }}">
+</head>
+<body>
+    <h1>All Books</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+    <div class="button-container">
+        <button onclick="goTofetch_all_books()">Show all books</button>
+      </div>
+      
+
+
+    <form action="{{ url_for('fetch_all_books') }}" method="GET">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" value="{{ request.args.get('author', '') }}">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="{{ request.args.get('category', '') }}">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ request.args.get('title', '') }}">
+        <input type="submit" value="Search">
+    </form>
+    
+
+    <table>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Categories</th>
+            <th>Actions</th>
+        </tr>
+        {% for book in books %}
+    <tr>
+        <td>{{ book[0] }}</td>
+        <td>{{ book[1] }}</td>
+        <td>{{ book[2] }}</td>
+        <td>{{ book[3] }}</td>
+        <td>
+              <!--transaction_type=0-->
+                <form action="{{ url_for('create_transaction') }}" method="POST">
+                    <input type="hidden" name="isbn" value="{{ book[0] }}">
+                    {% if book[4] == 1 and book[5] == 2 and reservation_count <= 2 %}
+                    <input type="submit" value="Reserve" name="reservation-action" class="reserve-button">
+                    {% elif book[4] == 0 and reservation_count <= 2 %}
+                    <input type="submit" value="Cancel Reservation" name="reservation-action" class="reserve-button">
+                    {% elif book[5] == 1 and reservation_count <= 2 %}
+                    Borrowed
+                    {% endif %}    
+                </form>
+             
+        </td>
+    </tr>
+{% endfor %}
+    </table>
+
+    <script>
+        $(document).ready(function() {
+    $('.reserve-button').click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        var form = $(this).closest('form');
+        var url = form.attr('action');
+
+        // Get the current URL with search parameters
+        var currentUrl = window.location.href;
+
+        // Get the ISBN of the reserved book
+        var isbn = form.find('input[name="isbn"]').val();
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(), // Serialize the form data
+            success: function(response) {
+                // Handle the successful response
+                if (response === 'reservation_updated') {
+                    // Reload the page with the preserved search parameters
+                    window.location.href = currentUrl;
+                }
+            },
+            error: function(xhr, status, error) {
+                // Handle the error response
+                console.log('Error:', error);
+            }
+        });
+    });
+});
+
+
+  function goToHomePage() {
+    window.location.href = "http://127.0.0.1:5000/home";
+  }
+  function goTofetch_all_books(){
+    window.location.href = "http://127.0.0.1:5000/fetch_all_books";
+  }
+    </script>
+</body>
+</html>
+
+
+
+

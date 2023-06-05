@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='book_details_style.css') }}">
+</head>
+<body>
+    <h1>Book Details</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+    <button onclick="goToTitleAndAuthorResults()">Title and author results</button>
+    <button onclick="goToEditBookPage()">Edit Book</button>
+
+    <table>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Publisher</th>
+            <th>Number of Pages</th>
+            <th>Image</th>
+            <th>Language</th>
+            <th>Summary</th>
+            <th>Number of Copies</th>
+        </tr>
+        <tr>
+            <td>{{ book_details[7] }}</td>
+            <td>{{ book_details[0] }}</td>
+            <td>{{ book_details[1] }}</td>
+            <td>{{ book_details[2] }}</td>
+            <td><img src="{{ book_details[3] }}" alt="Book Image"></td>
+            <td>{{ book_details[4] }}</td>
+            <td>{{ book_details[5] }}</td>
+            <td>{{ book_details[6] }}</td>
+        </tr>
+    </table>
+
+    <script>
+        function goToHomePage() {
+          window.location.href = "http://127.0.0.1:5000/home";
+        }
+        function goToTitleAndAuthorResults() {
+            window.location.href = "http://127.0.0.1:5000/fetch_title_author";
+        }
+        function goToEditBookPage() { 
+            window.location.href = "http://127.0.0.1:5000/edit_book?ISBN={{ book_details[7] }}";
+        }
+    </script>
+</body>
+</html>

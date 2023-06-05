@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top 3 category pairs</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='young_teachers.css') }}">
+</head>
+<body>
+  <h1>Top 3 category pairs</h1>
+  <button onclick="goToHomePage()">Home Page</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>1st Category</th>
+        <th>2nd Category</th>
+        <th>Borrow Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category1,category2,num_borrowed_books in top_category_pairs %}
+      <tr>
+        <td>{{ category1 }}</td>
+        <td>{{ category2 }}</td>
+        <td>{{ num_borrowed_books }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    function goToHomePage() {
+      window.location.href = "http://127.0.0.1:5000/home";
+    }
+  </script>
+</body>
+</html>

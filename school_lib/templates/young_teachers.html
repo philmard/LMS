@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top 10 Young Teachers</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='young_teachers.css') }}">
+</head>
+<body>
+  <h1>Top 10 Young Teachers</h1>
+  <button onclick="goToHomePage()">Home Page</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Number of Borrowed Books</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for teacher_first_name,teacher_last_name,num_borrowed_books in young_teachers %}
+      <tr>
+        <td>{{ teacher_first_name }}</td>
+        <td>{{ teacher_last_name }}</td>
+        <td>{{ num_borrowed_books }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    function goToHomePage() {
+      window.location.href = "http://127.0.0.1:5000/home";
+    }
+  </script>
+</body>
+</html>

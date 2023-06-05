@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transactions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='transactions.css') }}">
+    <style>
+        .overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            display: none;
+        }
+
+        .overlay img {
+            width: 10px;
+            height: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transaction Results</h1>
+
+    <!-- Add an overlay div to display the GIF -->
+    <div id="overlay" class="overlay">
+        <img src="https://i.gifer.com/fy3E.gif" alt="Loading...">
+    </div>
+
+    <form action="{{ url_for('fetch_transactions') }}" method="GET">
+        <label for="user_id">User_id:</label>
+        <input type="number" id="user_id" name="user_id" value="{{ request.args.get('user_id', '') }}">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>ISBN</th>
+            <th>Date of Reservation</th>
+            <th>Date of Borrowing</th>
+            <th>Date of Return</th>
+            <th>Date of Max Return</th>   
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[5] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[0] }}</td>
+            <td>
+                {% if result[7] == 0 %}
+                    <form action="{{ url_for('update_transaction_type') }}" method="POST">
+                        <input type="hidden" name="transaction_id" value="{{ result[6] }}">
+                        <input type="hidden" name="action" value="borrow">
+                        <input type="submit" value="Borrow" name="borrow-action" class="borrow-button">
+                    </form>
+                {% elif result[7] == 1 %}
+                    <form action="{{ url_for('update_transaction_type') }}" method="POST">
+                        <input type="hidden" name="transaction_id" value="{{ result[6] }}">
+                        <input type="hidden" name="action" value="return">
+                        <input type="submit" value="Returned" name="return-action" class="return-button">
+                    </form>
+                    <form action="{{ url_for('update_transaction_type') }}" method="POST">
+                        <input type="hidden" name="transaction_id" value="{{ result[6] }}">
+                        <input type="hidden" name="action" value="cancel borrow">
+                        <input type="submit" value="cancel borrow" name="cancel-action" class="cancel-button">
+                    </form>
+                {% elif result[7] == 2 %}
+                    <form action="{{ url_for('update_transaction_type') }}" method="POST">
+                        <input type="hidden" name="transaction_id" value="{{ result[6] }}">
+                        <input type="hidden" name="action" value="cancel return">
+                        <input type="submit" value="cancel return" name="cancel-action" class="cancel-button">
+                    </form>
+                {% endif %}
+            </td>     
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <script>
+        const borrowButtons = document.querySelectorAll('.borrow-button');
+        const overlay = document.getElementById('overlay');
+
+        borrowButtons.forEach(button => {
+            button.addEventListener('click', event => {
+                event.preventDefault(); // Prevent form submission
+
+                if (button.value === 'Borrow') {                       
+                    button.parentNode.submit(); // Manually submit the parent form
+                }
+            });
+        });
+
+        function showOverlay() {
+            overlay.style.display = 'block';
+        }
+
+        function hideOverlay() {
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+

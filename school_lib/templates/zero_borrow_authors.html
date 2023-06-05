@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zero Borrow Authors</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='young_teachers.css') }}">
+</head>
+<body>
+  <h1>All the authors with 0 borrows:</h1>
+  <button onclick="goToHomePage()">Home Page</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>author_id</th>
+        <th>Author Full Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for author_id,author_name in zero_borrow_authors %}
+      <tr>
+        <td>{{ author_id }}</td>
+        <td>{{ author_name }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    function goToHomePage() {
+      window.location.href = "http://127.0.0.1:5000/home";
+    }
+  </script>
+</body>
+</html>

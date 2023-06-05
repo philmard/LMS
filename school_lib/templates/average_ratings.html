@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Ratings</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='average_ratings_style.css') }}">
+</head>
+<body>
+    <h1>Average Ratings</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+    <form action="{{ url_for('fetch_average_ratings') }}" method="GET">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="{{ request.args.get('username', '') }}">
+        <br>
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="{{ request.args.get('category', '') }}">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+    
+    <table>
+        {% if case == 1 %}
+        <tr>
+            <th>User ID</th>
+            <th>Username</th>
+            <th>Average Rating</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[3] }}</td>
+        </tr>
+        {% endfor %}
+        {% elif case == 2 %}
+        <tr>
+            <th>Category</th>
+            <th>Average Rating</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+        </tr>
+        {% endfor %}
+        {% elif case == 3 %}
+        <tr>
+            <th>User ID</th>
+            <th>Username</th>
+            <th>Category</th>
+            <th>Average Rating</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+    <script>
+        function goToHomePage() {
+          window.location.href = "http://127.0.0.1:5000/home";
+        }
+      </script>
+</body>
+</html>
+
+

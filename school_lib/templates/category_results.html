@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total authors and teachers</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='category.css') }}">
+</head>
+<body>
+    <h1>Authors and Teachers of a Category</h1>
+    <button onclick="goToHomePage()">Home Page</button>
+
+    <form action="{{ url_for('fetch_category_books') }}" method="GET">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" value="{{ request.args.get('category', '') }}">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Search result:</h2>
+    <table>
+        <tr>
+            <th>category</th>
+            <th>authors</th>
+            <th>teachers</th>
+        </tr>
+        {% for category, authors, teachers in books %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>{{ authors }}</td>
+            <td>{{ teachers }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <script>
+        function goToHomePage() {
+          window.location.href = "http://127.0.0.1:5000/home";
+        }
+      </script>
+</body>
+</html>
+
