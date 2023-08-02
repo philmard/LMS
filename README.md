@@ -2,7 +2,9 @@
 Project for the Databases 2023 class in NTUA ECE that simulates a Database for a Library Management System (LMS). Received a mark of (99/100).
 # Authors
 ● Filippos Marntirosian 03120034
+
 ● Georgios Theodosiou 03120109
+
 ● Panagiotis Belsis 03120874
 # ER Diagram
 ![image](https://github.com/philmard/LMS/assets/133666571/03b58dbe-0b1c-48c5-8538-50544d616d54)
@@ -14,6 +16,7 @@ Project for the Databases 2023 class in NTUA ECE that simulates a Database for a
 3. Create the database using a DBSM that supports MySQL/MariaDB and run the scripts school_lib_create_schema.sql and school_lib_insert_data
 4. Use the command python run.py and visit http://localhost:5000/ from a browser
 5. You can now browse our application:
+
 ![image](https://github.com/philmard/LMS/assets/133666571/c7657f8a-94ea-460c-b2c9-24181a111848)
 # Screenshots
 ![image](https://github.com/philmard/LMS/assets/133666571/cddd39ff-350e-4b60-af94-e3225cad3187)
