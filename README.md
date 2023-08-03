@@ -3,11 +3,11 @@ Project for the Databases 2023 class in NTUA ECE that simulates a Database for a
 
 Received a mark of (99/100).
 # Authors
-● Filippos Marntirosian 03120034
+● Filippos Marntirosian 03120034 [philmard](https://github.com/philmard)
 
-● Georgios Theodosiou 03120109
+● Georgios Theodosiou 03120109 [GeorgeTheo7](https://github.com/GeorgeTheo7)
 
-● Panagiotis Belsis 03120874
+● Panagiotis Belsis 03120874 [PanosBelsis](https://github.com/PanosBelsis)
 # ER Diagram
 ![image](https://github.com/philmard/LMS/assets/133666571/03b58dbe-0b1c-48c5-8538-50544d616d54)
 # Relational Diagram
