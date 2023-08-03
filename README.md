@@ -13,7 +13,7 @@ Received a mark of (99/100).
 # Relational Diagram
 ![image](https://github.com/philmard/LMS/assets/133666571/5324e8cd-88a1-49ef-9252-6bf6b827b1d8)
 # Installation Guide
-1. Clone this repository using the command git clone https://github.com/philmard/LMS in a local working directory
+1. Clone this repository using the command 'git clone https://github.com/philmard/LMS' in a local working directory
 2. Use the command pip install -r requirements.txt in said directory to download the needed libraries
 3. Create the database using a DBSM that supports MySQL/MariaDB and run the scripts school_lib_create_schema.sql and school_lib_insert_data
 4. Use the command python run.py and visit http://localhost:5000/ from a browser
