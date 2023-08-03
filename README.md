@@ -20,6 +20,9 @@ Received a mark of (99/100).
 5. You can now browse our application:
 
 ![image](https://github.com/philmard/LMS/assets/133666571/c7657f8a-94ea-460c-b2c9-24181a111848)
+
+# More info
+For full information on the use of the application, visit https://github.com/philmard/LMS/blob/main/docs/-_project142_1.pdf
 # Screenshots
 ![image](https://github.com/philmard/LMS/assets/133666571/cddd39ff-350e-4b60-af94-e3225cad3187)
 ![image](https://github.com/philmard/LMS/assets/133666571/60adfda0-1b61-4749-a822-5d82512211a1)
