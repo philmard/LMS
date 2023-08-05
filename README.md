@@ -1,5 +1,5 @@
 # LMS
-Project for the [Databases 2023 class in NTUA ECE](https://www.ece.ntua.gr/en/undergraduate/courses/3123) that [simulates a Database for a Library Management System (LMS)](https://github.com/philmard/LMS/blob/main/docs/ekfwnhseis/Semester%20Project%202022-2023_en.pdf). 
+Project for the [**Databases 2023 class in NTUA ECE**](https://www.ece.ntua.gr/en/undergraduate/courses/3123) that [**simulates a Database for a Library Management System (LMS)**](https://github.com/philmard/LMS/blob/main/docs/ekfwnhseis/Semester%20Project%202022-2023_en.pdf). 
 
 Received a mark of **(99/100)**.
 # Authors
