@@ -15,7 +15,7 @@ Received a mark of (99/100).
 # Installation Guide
 1. Clone this repository using the command ``git clone https://github.com/philmard/LMS`` in a local working directory
 2. Use the command ``pip install -r requirements.txt`` in said directory to download the needed libraries
-3. Create the database using a DBSM that supports MySQL/MariaDB (we used [DBeaver](https://dbeaver.io/)) and run the scripts school_lib_create_schema.sql and school_lib_insert_data
+3. Create the database using a DBSM that supports MySQL/MariaDB (we used [DBeaver](https://dbeaver.io/)) and run the scripts [school_lib_create_schema.sql](https://github.com/philmard/LMS/blob/main/sql%20code/school_lib_create_schema.sql) and [school_lib_insert_data](https://github.com/philmard/LMS/blob/main/sql%20code/school_lib_insert_data.sql)
 4. Use the command ``python run.py`` and visit http://localhost:5000/ from a browser
 5. You can now browse our application:
 
