@@ -7,7 +7,7 @@ Project for the [**Databases 2023 class in NTUA ECE**](https://www.ece.ntua.gr/e
 
 ● [Georgios Theodosiou](https://github.com/GeorgeTheo7) 03120109 
 
-● [Panagiotis Belsis](https://github.com/PanosBelsis) 03120874 
+● [Panagiotis Belsis](https://github.com/PanosMpel) 03120874 
 # ER Diagram
 ![image](https://github.com/philmard/LMS/assets/133666571/03b58dbe-0b1c-48c5-8538-50544d616d54)
 # Relational Diagram
